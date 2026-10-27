@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Privasi / Privacy Policy - Remiqo</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --success: #10b981;
+      --success-bg: #ecfdf5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+      padding: 32px 28px;
+    }
+
+    @media (min-width: 640px) {
+      .container {
+        padding: 48px;
+      }
+    }
+
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .badge-container {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background-color: var(--success-bg);
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.025em;
+      margin-bottom: 8px;
+    }
+
+    .updated-date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .lang-btn {
+      padding: 6px 16px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .lang-section {
+      display: none;
+    }
+
+    .lang-section.active {
+      display: block;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 28px 0 12px 0;
+      color: #0f172a;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 20px 0 8px 0;
+      color: #1e293b;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #334155;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-card {
+      background-color: #f1f5f9;
+      border-left: 4px solid var(--primary);
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+    }
+
+    .highlight-card p {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+
+    th {
+      background-color: #f8fafc;
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fcfcfd;
+    }
+
+    code {
+      background-color: #e2e8f0;
+      color: #0f172a;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .contact-card {
+      background-color: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 24px;
+    }
+
+    .contact-card a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="badge-container">
+        <span class="badge">✓ 100% Offline</span>
+        <span class="badge">✓ No Data Collection</span>
+        <span class="badge">✓ No Trackers / Ads</span>
+      </div>
+      <h1>Kebijakan Privasi / Privacy Policy</h1>
+      <div class="updated-date">Terakhir diperbarui / Last updated: 27 Oktober 2026</div>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLang('id')">🇮🇩 Bahasa Indonesia</button>
+        <button class="lang-btn" onclick="switchLang('en')">🇬🇧 English</button>
+      </div>
+    </div>
+
+    <!-- Bahasa Indonesia -->
+    <div id="section-id" class="lang-section active">
+      <div class="highlight-card">
+        <p>Aplikasi <strong>Remiqo</strong> ("kami", "aplikasi") dikembangkan dengan komitmen penuh terhadap privasi dan keamanan pengguna. Kami <strong>tidak mengumpulkan, menyimpan, atau membagikan</strong> data pribadi apa pun ke server eksternal.</p>
+      </div>
+
+      <h2>1. Pengumpulan dan Penggunaan Data</h2>
+      <p><strong>Remiqo tidak mengumpulkan, menyimpan, mentransmisikan, atau membagikan informasi pribadi atau data penggunaan Anda kepada siapa pun.</strong></p>
+      <ul>
+        <li><strong>Tidak Ada Registrasi / Akun</strong>: Anda tidak perlu mendaftar, memasukkan email, nomor telepon, atau membuat akun untuk menggunakan aplikasi ini.</li>
+        <li><strong>Penyimpanan Lokal 100%</strong>: Semua data pengingat (judul alarm, waktu, hari pengulangan, pengaturan warna visual, dan preferensi dering) disimpan secara lokal di memori internal perangkat Anda menggunakan basis data SQLite/Room terenkripsi sistem Android.</li>
+        <li><strong>Tanpa Iklan dan Pelacak</strong>: Kami tidak menyematkan pustaka iklan pihak ketiga (seperti Google AdMob) maupun analitik pelacak perilaku (seperti Firebase Analytics).</li>
+      </ul>
+
+      <h2>2. Penjelasan Izin Perangkat (Permissions)</h2>
+      <p>Remiqo hanya meminta izin sistem yang benar-benar esensial untuk menjalankan fungsi inti alarm dan pengingat:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Izin Sistem</th>
+            <th>Tujuan Penggunaan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>POST_NOTIFICATIONS</code></td>
+            <td>Menampilkan pemberitahuan status alarm aktif, pengingat yang akan datang, dan kontrol snooze/dismiss.</td>
+          </tr>
+          <tr>
+            <td><code>SCHEDULE_EXACT_ALARM</code></td>
+            <td>Menjadwalkan alarm agar berbunyi tepat pada waktu yang telah Anda tetapkan, tanpa tertunda oleh mode hemat daya sistem (Doze mode).</td>
+          </tr>
+          <tr>
+            <td><code>USE_FULL_SCREEN_INTENT</code></td>
+            <td>Menampilkan layar alarm visual berkedip secara penuh saat perangkat dalam keadaan terkunci (Lock Screen).</td>
+          </tr>
+          <tr>
+            <td><code>FOREGROUND_SERVICE</code> &amp; <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
+            <td>Menjaga suara dering dan getaran tetap berbunyi terus-menerus hingga pengguna mematikan atau menunda alarm, bahkan jika layar mati.</td>
+          </tr>
+          <tr>
+            <td><code>VIBRATE</code></td>
+            <td>Menggetarkan perangkat saat alarm berbunyi sesuai preferensi yang Anda atur.</td>
+          </tr>
+          <tr>
+            <td><code>WAKE_LOCK</code></td>
+            <td>Menyalakan layar perangkat sementara saat alarm aktif agar visual pengingat langsung terlihat.</td>
+          </tr>
+          <tr>
+            <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+            <td>Menjadwalkan ulang alarm yang aktif secara otomatis setelah perangkat Anda di-restart/dinyalakan ulang.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Semua izin di atas digunakan secara eksklusif di dalam perangkat Anda dan <strong>tidak pernah mengakses internet</strong> untuk mentransfer data apa pun.</p>
+
+      <h2>3. Privasi Anak-Anak</h2>
+      <p>Aplikasi Remiqo aman untuk semua umur dan tidak menargetkan atau mengumpulkan data dari anak-anak di bawah umur 13 tahun.</p>
+
+      <h2>4. Perubahan pada Kebijakan Privasi</h2>
+      <p>Kami dapat memperbarui Kebijakan Privasi ini sewaktu-waktu jika terdapat pembaruan fungsi aplikasi. Setiap perubahan akan diperbarui pada halaman ini dengan tanggal pembaruan yang baru.</p>
+
+      <div class="contact-card">
+        <h3>5. Kontak Pengembang</h3>
+        <p>Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini, silakan hubungi pengembang melalui:</p>
+        <p>• <strong>Email</strong>: <a href="mailto:gonisetiawan0@gmail.com">gonisetiawan0@gmail.com</a></p>
+        <p>• <strong>Repositori</strong>: <a href="https://github.com/setiawanboedy/remiqo-privacy-policy" target="_blank" rel="noopener">github.com/setiawanboedy/remiqo-privacy-policy</a></p>
+      </div>
+    </div>
+
+    <!-- English -->
+    <div id="section-en" class="lang-section">
+      <div class="highlight-card">
+        <p>The <strong>Remiqo</strong> app ("we", "our", or "the app") is committed to respecting and protecting your privacy. We <strong>do not collect, store, or share</strong> any personal data with external servers.</p>
+      </div>
+
+      <h2>1. Data Collection and Usage</h2>
+      <p><strong>Remiqo does NOT collect, store, transmit, or share any personal information or analytics with any server or third party.</strong></p>
+      <ul>
+        <li><strong>No User Accounts</strong>: You do not need to register, log in, or provide any personal details (such as name, email, or location) to use Remiqo.</li>
+        <li><strong>100% Local Storage</strong>: All your alarm data (titles, time triggers, recurrence schedules, visual color palettes, and ringtone preferences) remain exclusively on your device's internal storage via SQLite/Room.</li>
+        <li><strong>No Ads &amp; No Trackers</strong>: Remiqo does not integrate third-party advertising SDKs or tracking mechanisms.</li>
+      </ul>
+
+      <h2>2. Device Permissions Used</h2>
+      <p>Remiqo requests only the permissions strictly required to provide core alarm and reminder capabilities:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>POST_NOTIFICATIONS</code></td>
+            <td>Displays upcoming reminder notifications and active alarm controls.</td>
+          </tr>
+          <tr>
+            <td><code>SCHEDULE_EXACT_ALARM</code></td>
+            <td>Ensures alarms trigger at the exact scheduled second, even during system battery-saving modes.</td>
+          </tr>
+          <tr>
+            <td><code>USE_FULL_SCREEN_INTENT</code></td>
+            <td>Presents the full-screen visual flashing screen when the alarm rings while the device is locked.</td>
+          </tr>
+          <tr>
+            <td><code>FOREGROUND_SERVICE</code> &amp; <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
+            <td>Ensures continuous ringtone playback and vibration until you dismiss or snooze the alarm.</td>
+          </tr>
+          <tr>
+            <td><code>VIBRATE</code></td>
+            <td>Powers haptic feedback and custom vibration patterns during alarms.</td>
+          </tr>
+          <tr>
+            <td><code>WAKE_LOCK</code></td>
+            <td>Turns on the screen when an alarm fires so the visual reminder is instantly visible.</td>
+          </tr>
+          <tr>
+            <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+            <td>Automatically reschedules active alarms after device reboot.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>None of these permissions are used to collect or exfiltrate any data.</p>
+
+      <h2>3. Children's Privacy</h2>
+      <p>Remiqo does not address anyone under the age of 13 and collects zero personal data from any user.</p>
+
+      <h2>4. Changes to This Privacy Policy</h2>
+      <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+
+      <div class="contact-card">
+        <h3>5. Contact Us</h3>
+        <p>For any inquiries regarding this Privacy Policy, please reach out to:</p>
+        <p>• <strong>Email</strong>: <a href="mailto:gonisetiawan0@gmail.com">gonisetiawan0@gmail.com</a></p>
+        <p>• <strong>Repository</strong>: <a href="https://github.com/setiawanboedy/remiqo-privacy-policy" target="_blank" rel="noopener">github.com/setiawanboedy/remiqo-privacy-policy</a></p>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 Remiqo App &bull; Budi Setiawan &bull; All Rights Reserved
+    </div>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.lang-section').forEach(sec => sec.classList.remove('active'));
+
+      if (lang === 'id') {
+        document.querySelectorAll('.lang-btn')[0].classList.add('active');
+        document.getElementById('section-id').classList.add('active');
+      } else {
+        document.querySelectorAll('.lang-btn')[1].classList.add('active');
+        document.getElementById('section-en').classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
